@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Mode - CTF Cybersecurity Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Teacher Mode - Manage Quiz</h1>
+        <p>You have full access: add, edit, delete questions, manage all on device.</p>
+        <h2>Add New Question</h2>
+        <form id="add-question-form">
+            <input type="text" id="question-text" placeholder="Question" required><br>
+            <input type="text" id="option1" placeholder="Option 1" required><br>
+            <input type="text" id="option2" placeholder="Option 2" required><br>
+            <input type="text" id="option3" placeholder="Option 3" required><br>
+            <input type="text" id="option4" placeholder="Option 4" required><br>
+            <input type="number" id="correct-answer" placeholder="Correct Option (1-4)" min="1" max="4" required><br>
+            <input type="number" id="points" placeholder="Points" min="1" required><br>
+            <button type="submit">Add Question</button>
+        </form>
+        <h2>Existing Questions</h2>
+        <div id="questions-list"></div>
+        <button id="back-btn">Back to Home</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
